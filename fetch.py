@@ -10,7 +10,6 @@ if __name__ == '__main__':
         os.environ.get('SUMMON_KEYRING_SERVICE', 'summon'),
         variable
     )
-    keyring.
     if value is None:
         sys.stderr.write('{} could not be retrieved'.format(variable))
         sys.stderr.flush()
