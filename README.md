@@ -57,5 +57,5 @@ You may need to run the following commands as a super user.
 $ git clone git@github.com:conjurinc/summon-keyring.git
 $ cd summon-keyring
 $ mkdir -p /usr/libexec/summon
-$ ln -s "$PWD/keyring.py" /usr/libexec/summon/keyring.py
+$ ln -s "$PWD/ring.py" /usr/libexec/summon/keyring.py
 
