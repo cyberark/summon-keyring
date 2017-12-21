@@ -1,6 +1,6 @@
 # summon-keyring
 
-Cross-platform provider for [Summon](https://github.com/conjurinc/summon) that talks to keyrings.
+Cross-platform provider for [Summon](https://github.com/cyberark/summon) that talks to keyrings.
 
 Wraps the Python [keyring library](https://pypi.python.org/pypi/keyring) to allow summon to fetch credentials from:
 
@@ -39,7 +39,7 @@ Using summon, you can easily switch between this keyring provider for developmen
 
 ## Install
 
-You will need to [install summon](http://conjurinc.github.io/summon/) to
+You will need to [install summon](https://cyberark.github.io/summon/) to
 use this provider.
 
 You also need to install the Python [keyring](https://pypi.python.org/pypi/keyring) library.
