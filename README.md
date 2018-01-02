@@ -49,13 +49,13 @@ $ pip install keyring
 ```
 
 You can install by simply cloning the repo and creating a symlink in the
-`/usr/libexec/summon` directory.
+`/usr/local/lib/summon` directory.
 
 You may need to run the following commands as a super user.
 
 ```sh-session
 $ git clone git@github.com:conjurinc/summon-keyring.git
 $ cd summon-keyring
-$ mkdir -p /usr/libexec/summon
-$ ln -s "$PWD/ring.py" /usr/libexec/summon/keyring.py
+$ mkdir -p /usr/local/lib/summon
+$ ln -s "$PWD/ring.py" /usr/local/lib/summon/keyring.py
 
