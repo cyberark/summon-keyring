@@ -31,7 +31,7 @@ and the "Password" field should contain the secret value.
 Now we can fetch it with summon by using this provider.
 
 ```sh-session
-$ summon -p keyring.py --yaml 'MYSECRET: !var secret/path' printenv MYSECRET
+$ summon -p ring.py --yaml 'MYSECRET: !var secret/path' printenv MYSECRET
 secretvalue
 ```
 
