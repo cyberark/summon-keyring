@@ -58,4 +58,11 @@ $ git clone git@github.com:conjurinc/summon-keyring.git
 $ cd summon-keyring
 $ mkdir -p /usr/local/lib/summon
 $ ln -s "$PWD/ring.py" /usr/local/lib/summon/keyring.py
+```
 
+## Contributing
+
+We welcome contributions of all kinds to this repository. For instructions on how to get started and descriptions of our development workflows, please see our [contributing
+guide][contrib].
+
+[contrib]: CONTRIBUTING.md
