@@ -37,7 +37,20 @@ secretvalue
 
 Using summon, you can easily switch between this keyring provider for development and use and more appropriate provider, like [Conjur](http://conjur.net/), in production.
 
-## Install
+## Getting Started 
+
+### Using summon-keyring with Conjur OSS 
+
+Are you using this project with [Conjur OSS](https://github.com/cyberark/conjur)? Then we 
+**strongly** recommend choosing the version of this project to use from the latest [Conjur OSS 
+suite release](https://docs.conjur.org/Latest/en/Content/Overview/Conjur-OSS-Suite-Overview.html). 
+Conjur maintainers perform additional testing on the suite release versions to ensure 
+compatibility. When possible, upgrade your Conjur version to match the 
+[latest suite release](https://docs.conjur.org/Latest/en/Content/ReleaseNotes/ConjurOSS-suite-RN.htm); 
+when using integrations, choose the latest suite release that matches your Conjur version. For any 
+questions, please contact us on [Discourse](https://discuss.cyberarkcommons.org/c/conjur/5).
+
+### Install
 
 You will need to [install summon](https://cyberark.github.io/summon/) to
 use this provider.
