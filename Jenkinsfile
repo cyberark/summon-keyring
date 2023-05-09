@@ -16,7 +16,7 @@ pipeline {
     stage('Validate') {
       parallel {
         stage('Changelog') {
-          steps { sh './parse-changelog.sh' }
+          steps { parseChangelog() }
         }
       }
     }
