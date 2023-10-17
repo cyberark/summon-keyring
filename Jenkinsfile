@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-  agent { label 'executor-v2' }
+  agent { label 'conjur-enterprise-common-agent' }
 
   options {
     timestamps()
@@ -13,10 +13,17 @@ pipeline {
   }
 
   stages {
+    stage('Get InfraPool Agent') {
+      steps {
+        script {
+          INFRAPOOL_EXECUTORV2_AGENT_0 = getInfraPoolAgent.connected(type: "ExecutorV2", quantity: 1, duration: 1)[0]
+        }
+      }
+    }
     stage('Validate') {
       parallel {
         stage('Changelog') {
-          steps { parseChangelog() }
+          steps { parseChangelog(INFRAPOOL_EXECUTORV2_AGENT_0) }
         }
       }
     }
@@ -24,7 +31,7 @@ pipeline {
 
   post {
     always {
-      cleanupAndNotify(currentBuild.currentResult)
+      releaseInfraPoolAgent(".infrapool/release_agents")
     }
   }
 }
