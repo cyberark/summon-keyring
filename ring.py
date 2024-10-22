@@ -18,13 +18,13 @@ if __name__ == '__main__':
         write_and_flush(sys.stderr, 'No variable was provided.')
         sys.exit(1)
 
-    variable = sys.argv[1]
+    VARIABLE = sys.argv[1]
     value = keyring.get_password(
         os.environ.get('SUMMON_KEYRING_SERVICE', 'summon'),
-        variable
+        VARIABLE
     )
     if value is None:
-        write_and_flush(sys.stderr, '{} could not be retrieved'.format(variable))
+        write_and_flush(sys.stderr, f'{VARIABLE} could not be retrieved')
         sys.exit(1)
 
     write_and_flush(sys.stdout, value)
