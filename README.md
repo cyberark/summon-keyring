@@ -92,7 +92,7 @@ $ summon --provider keyring.py \
 secretvalue
 ```
 
-Using summon, you can easily switch between this keyring provider for development and use and more appropriate provider, like [Conjur](http://conjur.net/), in production.
+Using summon, you can easily switch between this keyring provider for development and use and more appropriate provider, like CyberArk Secrets Manager, in production.
 
 ## Contributing
 
