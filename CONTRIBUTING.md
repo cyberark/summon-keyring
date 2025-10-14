@@ -14,3 +14,23 @@ For general contribution and community guidelines, please see the [community rep
 From here your pull request will be reviewed and once you've responded to all
 feedback it will be merged into the project. Congratulations, you're a
 contributor!
+
+## Releasing
+
+Releases should be created by maintainers only. To create and promote a release, follow the instructions in this section.
+
+### Update the version and changelog
+
+The following checklist should be followed when creating a release:
+
+- [ ] Open a PR with the following changes for `main` branch and wait for it to be merged:
+    - [ ] Bump version in `CHANGELOG.md`.
+    - [ ] Update any license/notices files if needed.
+
+### Release and Promote
+
+1. Merging into the main branch will automatically trigger a release. If successful, this release can be promoted at a later time.
+
+2. Jenkins build parameters can be utilized to promote a successful release or manually trigger additional releases as needed.
+
+3. Reference the internal automated release doc for releasing and promoting.
