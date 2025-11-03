@@ -9,6 +9,7 @@ properties([
 if (params.MODE == "PROMOTE") {
   release.promote(params.VERSION_TO_PROMOTE) { infrapool, sourceVersion, targetVersion, assetDirectory ->
   }
+  release.copyEnterpriseRelease(params.VERSION_TO_PROMOTE)
   return
 }
 
