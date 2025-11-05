@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
-## [0.2.2] - 2025-10-27
-### Changed
-- Updated documentation to align with Conjur Enterprise name change to Secrets Manager. (CNJR-10978)
+## [0.2.2] - 2025-11-03
 
 ### Added
+- Added automated release and promotion via Jenkins
 - Added `close-stale.yml` GitHub workflow
+
+### Changed
+- Updated documentation to align with Conjur Enterprise name change to Secrets Manager. (CNJR-10978)
 
 ## [0.2.1] - 2015-06-29
 
